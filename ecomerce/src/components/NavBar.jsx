@@ -1,5 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import SearchIcon from '@mui/icons-material/Search';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Badge } from '@mui/material';
   export const NavBar = () => {
      const Container=styled.div`
      background-color:black;
@@ -15,20 +18,42 @@ import styled from 'styled-components'
        `
      const Left=styled.div`
       flex:1;
-     `
+      display:flex;
+      align-items:center;
+      `
      const Languge=styled.div`
       font-size:14px;
       cursor:pointer;     `
      const Center=styled.div`
       flex:1;
+      text-align:center;
      `
      const SerchContainer=styled.div`
+     border:none;
+     display:flex;
+     align-items:center;
+     margin-left:25px;
+     padding:5px; 
+     `
+     const input=styled.div`
+      `
+     const Input=styled.div`
      
      `
      const Right=styled.div`
       flex :1;
+      display:flex;
+      flex-direction:row;
+      justify-content:flex-end;
+      margin-left:10px
      `
+const MenuItem=styled.div`
+font-size:14px;
+cursor:pointer;
+margin-left:25px;
+margin-right:15px;
 
+`
 
      return (
     <Container>
@@ -36,6 +61,8 @@ import styled from 'styled-components'
             <Left>
                 <Languge> EN</Languge>
                 <SerchContainer>
+                    <input type='text' placeholder='search....'/>
+                    <SearchIcon /> 
                  </SerchContainer>
             </Left>
 
@@ -44,7 +71,12 @@ import styled from 'styled-components'
             </Center>
 
             <Right>
-                 cart 
+                 <MenuItem>Register</MenuItem> 
+                 <MenuItem>Sign In</MenuItem> 
+                 <Badge badgeContent={4} color="primary"> 
+                 <ShoppingCartIcon/>
+                 </Badge>
+
             </Right>
           </Wraper>
      </Container>
