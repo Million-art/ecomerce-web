@@ -5,55 +5,45 @@ display: flex;
 width: 100%;
 height: 100vh;
 align-items:center;
+justify-content:center;
 position: relative;
+background-size:cover;
+background-reapet:no-repeat;
+background-position:center;
 
-    slid{
-        margin-top:20px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        min-width:100%;
-        height: 400px;
-        overflow-x: hidden;
-        position: relative;
-
-            img{
-                width: 100vw;
-                margin-left: 10px;
-                 height:100%
+    .wrapper{
+        width: 100%;
+        height: 100%;
+        display:flex;
+        background-color:green;
+            .left{
+                display:grid;
+                place-items:center;
+                width:5%;
+                background-color:rgb(255,255,255,0.2);
             }
-            info{
-                
-                width: 50%;
-                height: 400px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                color: black;
-                position: absolute;
-                h1{
-                     
+            .center{
+                width:90%;
+                display:grid;
+                place-items:center;
+                .title{
+                     color:green;
+                     background-color:rgb(255,255,255,0.7)
+
                 }
-                    p{
-                        letter-spacing:3px;
-                        font-size:18px;
-                        font-weight:bold;
-                        text-align: center;
-                        margin:40px 0px;
-                     }
-                    button{
-                        padding: 10px;
-                        background:transparent;
-                        border-radius:10px;
-                        color:wheat;
-                    }
-                    button:hover{
-                        background:black;
-                    }
+                .txt{
+                     font-size:23px;
+                     background-color:rgb(255,255,255,0.7)
+                    
+                }
             }
-}
+            .right{
+                display:grid;
+                place-items:center;
+                width:5%;
+                background-color:rgb(255,255,255,0.2);
+             }
+    }
 
 `
    
