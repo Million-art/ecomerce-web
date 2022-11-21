@@ -7,7 +7,7 @@ const Container = styled.div`
  display:flex;
  flex-direction:column;
  align-items:center;
- margin-top:20px;
+ <margin-top:22></margin-top:22>px;
      .wrapper{
         display:flex;
         flex-direction:row;
