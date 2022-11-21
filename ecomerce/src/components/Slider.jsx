@@ -1,22 +1,23 @@
 import {useState} from 'react'
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import Slides from './SliderData.jsx'
+import Slides from './SlideData.jsx'
 import {Container} from './Slider.style.jsx'
 
  
 export const Slider = () => {
   const [curruntImage, setCurrentImage] =useState(1)
   function changeToLeft(){
-    curruntImage > 0 && setCurrentImage(curruntImage-1)
+    curruntImage > 0 ? setCurrentImage(curruntImage-1): setCurrentImage(Slides.length-1)
   }
   function changeToRight(){
-    curruntImage < Slides.length-1 && setCurrentImage(curruntImage+1)
+    curruntImage < Slides.length-1 ? setCurrentImage(curruntImage+1):setCurrentImage(0)
   }
   return (
 <div>
   <Container>
-    <div className='wrapper' style={{backgroundImage:`url(${Slides[curruntImage].img})`}}>
+    <div className='wrapper' style={{backgroundImage:`url(${Slides[curruntImage].img})`    
+}}>
         <div className="left">
           <ArrowBackIosIcon onClick={changeToLeft} />
         </div>
@@ -27,6 +28,7 @@ export const Slider = () => {
            <div className='txt'>
               <p>{Slides[curruntImage].text}</p>
             </div>
+            <button className='btn-shopeNow'>Shop Now</button>
         </div>
         <div className="right">
           <ArrowForwardIosIcon onClick={changeToRight} />

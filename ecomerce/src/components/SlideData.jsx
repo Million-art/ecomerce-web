@@ -1,4 +1,4 @@
- const Slides= [{
+ export const Slides= [{
     img:require('../images/tv.png'),
     title:'50% discount',
     text:'out shope made discount until Junuary',
@@ -22,4 +22,5 @@
     text:'lorempixeln aoldg doan boan comaer',
     id:4
 }]
-export default Slides
+ 
+export default  Slides  
