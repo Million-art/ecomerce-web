@@ -3,6 +3,7 @@ import { NavBar } from '../components/NavBar'
 import { Announcement } from '../components/Announcement'
 import {Slider} from '../components/Slider'
 import {Catagories} from '../components/Catagories.jsx'
+import { Product } from '../components/Product'
 
  export const Home = () => {
   return (
@@ -11,6 +12,7 @@ import {Catagories} from '../components/Catagories.jsx'
         <NavBar />
         <Slider />
         <Catagories />
+        <Product />
     </div>
   )
 }
