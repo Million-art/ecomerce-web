@@ -57,6 +57,12 @@ margin:10px;
                     cursor:pointer;
                     border-radius:20px;
                     background-color:rgb(2,25,5,0.8);
+                    &: hover{
+                        background-color:rgb(2,25,5,0.5);
+                        color:white;
+                         transition:0.2s ease-in-out;
+
+                    }
                 }
             }
             .right{

@@ -28,15 +28,15 @@ align-items:center;
 
           .product-list{
             position: relative;
-           display:grid;
-           place-items:center;
+            display:grid;
+            place-items:center;
+              
               img{
-                border-radius:20px;
-   
-            display:flex;
-            flex-direction:row;
-            justify-content:center;
-            align-items:center;
+                border-radius:20px;      
+                display:flex;
+                flex-direction:row;
+                justify-content:center;
+                align-items:center;
               }
           }
     }    
@@ -44,11 +44,12 @@ align-items:center;
 `
 const Icons = styled.div`
   position:absolute;
-  display:flex;
+  opacity:0;
   gap: 20px;
   &: hover{
   display:flex;
-  
+  opacity:1;
+ 
  }
 `
 const Icon=styled.div`
@@ -59,6 +60,7 @@ display:flex;
 align-items:center;
 justify-content:center;
 `
+ 
   return (
     <Container> 
          <h1>  Products </h1>
