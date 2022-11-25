@@ -4,6 +4,8 @@ import { Announcement } from '../components/Announcement'
 import {Slider} from '../components/Slider'
 import {Catagories} from '../components/Catagories.jsx'
 import { Product } from '../components/Product'
+import { NewsLetter } from '../components/NewsLetter'
+import { Footer } from './Footer'
 
  export const Home = () => {
   return (
@@ -13,6 +15,8 @@ import { Product } from '../components/Product'
         <Slider />
         <Catagories />
         <Product />
+        <NewsLetter />
+        <Footer />
     </div>
   )
 }
