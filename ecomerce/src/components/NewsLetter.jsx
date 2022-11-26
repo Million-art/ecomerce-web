@@ -5,12 +5,16 @@ export const NewsLetter = () => {
     const Container =styled.div`
     width: 100%;
     height: 300px;
-    background-color:white;
-    display: flex;
+     display: flex;
     flex-direction:column;
     align-items: center;
     justify-content: center;
      gap: 20px;
+     h1{
+        color:rgb(55, 93, 219);
+        text-decoration:underline;
+
+      }
     `
     const InputContiner =styled.div`
     display: flex;

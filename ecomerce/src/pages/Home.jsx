@@ -5,7 +5,8 @@ import {Slider} from '../components/Slider'
 import {Catagories} from '../components/Catagories.jsx'
 import { Product } from '../components/Product'
 import { NewsLetter } from '../components/NewsLetter'
-import { Footer } from './Footer'
+import { Footer } from '../components/Footer'
+ 
 
  export const Home = () => {
   return (

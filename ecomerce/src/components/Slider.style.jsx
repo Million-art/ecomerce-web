@@ -26,7 +26,11 @@ margin:10px;
                 border-top-left-radius:20px ; 
                 border-bottom-left-radius:20px ; 
                 color:white;
+                &: hover{
+                    color:rgb(55, 93, 219);
+                    transition:0.2s ease-in-out;
 
+               }
 
             }
             .center{
@@ -58,7 +62,7 @@ margin:10px;
                     border-radius:20px;
                     background-color:rgb(2,25,5,0.8);
                     &: hover{
-                        background-color:rgb(2,25,5,0.5);
+                        background-color:rgb(55, 93, 219);
                         color:white;
                          transition:0.2s ease-in-out;
 
@@ -74,7 +78,11 @@ margin:10px;
                 border-top-right-radius:20px ;
                 border-bottom-right-radius:20px ; 
                 color:white;
- 
+                &: hover{
+                     color:rgb(55, 93, 219);
+                     transition:0.2s ease-in-out;
+
+                }
 
              }
     }

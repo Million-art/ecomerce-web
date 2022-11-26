@@ -15,6 +15,11 @@ margin-top:20px;
 flex-direction:column;
 justify-content:center;
 align-items:center;
+      h1{
+        color:rgb(55, 93, 219);
+        text-decoration:underline;
+
+      }
       .products{
         margin-top:20px;
         width:100%;
@@ -37,6 +42,7 @@ align-items:center;
                 flex-direction:row;
                 justify-content:center;
                 align-items:center;
+                
               }
           }
     }    
@@ -59,6 +65,11 @@ padding:5px;
 display:flex;
 align-items:center;
 justify-content:center;
+&:hover{
+  transform: scale(1.1, 1.1);
+  transition:0.3s ease-in;
+  color:rgb(55, 93, 219);
+}
 `
  
   return (

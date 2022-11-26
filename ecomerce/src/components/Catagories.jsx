@@ -8,6 +8,11 @@ const Container = styled.div`
  align-items:center;
  justify-content:center;
  margin:30px 20px;
+      h1{
+        color:rgb(55, 93, 219);
+        text-decoration:underline;
+
+      }
       .wrapper{
         display:flex;
         flex-direction:row;
@@ -25,7 +30,10 @@ const Container = styled.div`
               flex-direction:column;
               align-items:center;
               justify-content:center;
-               
+              &:hover{
+                transform: scale(1.1, 1.1);
+                transition:0.5s ease-in;
+              } 
                   img{
                     border-radius:20px;
                       width:100%;
@@ -50,6 +58,9 @@ const Container = styled.div`
                         background-color:black;
                         border-radius:10px;
                         color:white;
+                        &: hover{
+                          background-color:rgb(55, 93, 219);
+                        }
                       }
                   }
 
