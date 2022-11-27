@@ -5,6 +5,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Badge } from '@mui/material';
   export const NavBar = () => {
      const Container=styled.div`
+     width:100%;
      background-color:black;
      color:white;
      height:60px;
